@@ -1,0 +1,9 @@
+version: '2.2'
+services:
+  elasticsearch:
+    image: elasticsearch:6.5.4
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - E:\docker\data\elasticsearch:usr/share/elasticsearch/data
